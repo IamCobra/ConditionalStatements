@@ -43,7 +43,7 @@
         static int Divisable(int firstValue, int secondValue) // Ved denne funktion har jeg lavet en if statement.
         {
             int result;
-            bool isTrue = false; // jeg har lavet en bool som vi siger er false
+            bool isTrue = false;
 
             if (secondValue % 2 == 0 || secondValue % 3 == 0) // Her tjekker jeg om secondValue kan divideres med 2 eller 3, ved at bruge modulus for at være sikker på at resten er ligemed 0.
             {
