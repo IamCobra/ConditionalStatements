@@ -40,7 +40,7 @@
             return value;
         }
 
-        static int Divisable(int firstValue, int secondValue) // Ved denne funktion har jeg lavet en if statement.
+        static int Divisable(int firstValue, int secondValue)
         {
             int result;
             bool isTrue = false;
