@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1
+namespace ConsoleApp1
 {
     internal class Program
     {
@@ -28,6 +28,10 @@
             int[] numbers3 = { 5, 3, 2, };
             Console.WriteLine(IfSortedAscending(numbers2));
             Console.WriteLine(IfSortedAscending(numbers3));
+
+            bool result2 = IfNumberIsEven(100);
+            Console.WriteLine(result2);
+          
         }
 
         static int AbsolutValue(int value) // Denne funktion tjekker om tallet er minus. Og hvis den er så ganger den tallet med minus for at det bliver et positivt tal
@@ -38,6 +42,23 @@
             }
 
             return value;
+        }
+
+        static bool IfNumberIsEven(int firstValue)
+        {
+            bool result;
+
+            if (firstValue % 2 == 0)
+            {
+                result = true;
+            }
+            else
+            {
+                result = false;
+            }
+
+            return result;
+
         }
 
         static int Divisable(int firstValue, int secondValue)
@@ -85,7 +106,7 @@
 
 
 
-        public static bool IfGreaterThanThirdOne(int[] arrays)
+        static bool IfGreaterThanThirdOne(int[] arrays)
         {
             if (arrays.Length != 3)
             {
@@ -99,7 +120,7 @@
             return (num1 * num2 > num3) || (num1 + num2 > num3);
         }
 
-        public static bool IfSortedAscending(int[] array)
+        static bool IfSortedAscending(int[] array)
         {
             if (array.Length != 3)
             {
@@ -108,8 +129,7 @@
             return array[0] <= array[1] && array[1] <= array[2];
         }
 
-
-
-
     }
+
 }
+
