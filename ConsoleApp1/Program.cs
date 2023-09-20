@@ -31,6 +31,11 @@ namespace ConsoleApp1
 
             bool result2 = IfNumberIsEven(100);
             Console.WriteLine(result2);
+
+            // Ved denne tester jeg om den angivet integer er et leap year
+
+            bool leapYear = IsLeapYear(2024);
+            Console.WriteLine(leapYear);
           
         }
 
@@ -127,6 +132,18 @@ namespace ConsoleApp1
                 return false;
             }
             return array[0] <= array[1] && array[1] <= array[2];
+        }
+
+        static bool IsLeapYear(int year)
+        {
+            if(year % 4 == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
     }
